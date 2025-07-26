@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!  
 Built with HTML, CSS, and JavaScript to showcase my skills and projects.
 
-🌐 **Live Site**: https://your-username.github.io/anushka-portfolio
+🌐 **Live Site**: https://anushkakataria26.github.io/Portfolio/
 
 ## 📁 Projects
 - 💸 **Expense Tracker** – C++ based CLI expense manager
