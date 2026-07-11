@@ -107,13 +107,21 @@ main > section {
 nav {
     position: sticky;
     top: 0;
-    z-index: 99999;
+    z-index: 9999;
     background-color: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--space-md) max(var(--space-md), calc((100% - 1200px) / 2));
+    transition: padding 300ms ease-out, background-color 300ms ease-out;
+}
+
+nav.scrolled {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    background-color: rgba(250, 249, 245, 0.95); /* slightly transparent bg for effect */
+    backdrop-filter: blur(8px);
 }
 
 nav .logo {
@@ -506,23 +514,6 @@ nav button[aria-controls="nav-links"] {
     color: var(--color-text-muted);
     background-color: var(--color-bg);
     margin-bottom: var(--space-lg);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.resume-embed::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    background: transparent;
-}
-
-.resume-embed object {
-    pointer-events: none;
-    position: relative;
-    z-index: 1;
 }
 
 /* Skills Override */

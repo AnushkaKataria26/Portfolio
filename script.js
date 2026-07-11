@@ -48,5 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 toggleBtn.setAttribute('aria-expanded', 'false');
             }
         });
+
+        // Navbar shrink on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
     }
 });
