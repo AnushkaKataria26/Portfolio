@@ -107,7 +107,7 @@ main > section {
 nav {
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 99999;
     background-color: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
     display: flex;
@@ -506,10 +506,23 @@ nav button[aria-controls="nav-links"] {
     color: var(--color-text-muted);
     background-color: var(--color-bg);
     margin-bottom: var(--space-lg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.resume-embed::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: transparent;
 }
 
 .resume-embed object {
     pointer-events: none;
+    position: relative;
+    z-index: 1;
 }
 
 /* Skills Override */
