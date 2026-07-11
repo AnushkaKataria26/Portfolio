@@ -508,6 +508,10 @@ nav button[aria-controls="nav-links"] {
     margin-bottom: var(--space-lg);
 }
 
+.resume-embed object {
+    pointer-events: none;
+}
+
 /* Skills Override */
 #skills h3 {
     margin-top: var(--space-lg);
