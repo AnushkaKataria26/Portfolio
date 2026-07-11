@@ -114,14 +114,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: var(--space-md) max(var(--space-md), calc((100% - 1200px) / 2));
-    transition: padding 300ms ease-out, background-color 300ms ease-out;
+    transition: padding 300ms ease-out;
 }
 
 nav.scrolled {
     padding-top: var(--space-xs);
     padding-bottom: var(--space-xs);
-    background-color: rgba(250, 249, 245, 0.95); /* slightly transparent bg for effect */
-    backdrop-filter: blur(8px);
 }
 
 nav .logo {
