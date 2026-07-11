@@ -108,25 +108,26 @@ nav {
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: var(--color-text);
-    border-bottom: none;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--space-md) max(var(--space-md), calc((100% - 1200px) / 2));
-    transition: padding 300ms ease-out;
+    transition: padding 300ms ease-out, border-color 300ms ease-out, box-shadow 300ms ease-out;
 }
 
 nav.scrolled {
     padding-top: var(--space-xs);
     padding-bottom: var(--space-xs);
+    border-color: var(--color-border);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
 }
 
 nav .logo {
     font-family: var(--font-family-heading);
     font-size: var(--font-size-h3);
     font-weight: 700;
-    color: var(--color-bg);
 }
 
 nav ul {
@@ -136,7 +137,7 @@ nav ul {
 }
 
 nav a {
-    color: var(--color-bg);
+    color: var(--color-text);
     font-weight: 500;
     font-size: var(--font-size-small);
     position: relative;
@@ -171,9 +172,9 @@ nav a:focus-visible::after {
 nav button[aria-controls="nav-links"] {
     display: none;
     background: transparent;
-    border: 1px solid var(--color-bg);
+    border: 1px solid var(--color-border);
     border-radius: 4px;
-    color: var(--color-bg);
+    color: var(--color-text);
     font-family: var(--font-family-body);
     font-weight: 500;
     cursor: pointer;
