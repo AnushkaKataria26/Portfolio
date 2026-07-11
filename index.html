@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] — Portfolio</title>
+    <title>Anushka Kataria — Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="logo">[Your Name]</div>
+        <div class="logo">Anushka Kataria</div>
         <button aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">Menu</button>
         <ul id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -22,20 +24,18 @@
 
     <main>
         <section id="hero">
-            <h1>[Your Name]</h1>
-            <p>[One-line positioning: e.g. "Final-year CS student building ML and backend systems"]</p>
-            <div class="photo-placeholder" style="width: 200px; height: 200px; background-color: #eee; display: flex; align-items: center; justify-content: center; border: 1px dashed #999;">
-                [YN]
-            </div>
+            <h1>Anushka Kataria</h1>
+            <p>Software Developer specializing in distributed systems and backend infrastructure, with applied experience in machine learning and NLP.</p>
+            <div class="photo-placeholder" style="width: 240px; height: 300px; overflow: hidden;"><img src="assets/photo.jpg" alt="Anushka Kataria" class="photo" style="width: 100%; height: 100%; object-fit: cover;"></div>
             <div class="cta-buttons">
-                <a href="#projects" class="btn">[View Projects]</a>
-                <a href="#resume" class="btn">[Download Resume]</a>
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
             </div>
         </section>
 
         <section id="about">
             <h2>About</h2>
-            <p>[Placeholder bio: replace with 3-5 sentences covering background, focus area, and goals]</p>
+            <p>I am drawn to engineering challenges that require rigorous architecture, whether that means designing fault-tolerant infrastructure to handle high-throughput data or evaluating the robustness of predictive models under real-world edge cases. My focus is on building resilient systems that bridge the gap between core backend engineering and applied machine learning. Currently, I am expanding this foundation by exploring Generative AI and how foundation models can be deployed reliably in production environments.</p>
         </section>
 
         <section id="skills">
@@ -43,35 +43,31 @@
             
             <h3>Languages</h3>
             <ul>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 3]</li>
-                <li>[Skill 4]</li>
-                <li>[Skill 5]</li>
+                <li>Python</li>
+                <li>C++</li>
             </ul>
 
             <h3>Machine Learning</h3>
             <ul>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 3]</li>
-                <li>[Skill 4]</li>
+                <li>Machine Learning & Deep Learning</li>
+                <li>NLP</li>
+                <li>scikit-learn & PyTorch</li>
+                <li>Transformers (DistilBERT)</li>
             </ul>
 
             <h3>Backend/Systems</h3>
             <ul>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 3]</li>
-                <li>[Skill 4]</li>
+                <li>FastAPI</li>
+                <li>SQL & PostgreSQL</li>
+                <li>System Design</li>
+                <li>Operating Systems & Computer Networks</li>
             </ul>
 
             <h3>Tools & Platforms</h3>
             <ul>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 3]</li>
-                <li>[Skill 4]</li>
+                <li>Git & GitHub</li>
+                <li>MLflow</li>
+                <li>Docker</li>
             </ul>
         </section>
 
@@ -81,62 +77,78 @@
             <div class="project-grid">
                 
                 <article class="project-card">
-                    <div class="project-thumb"></div>
-                    <h3>[Project Title 1]</h3>
-                    <p>[One-line project description 1]</p>
+                    <div class="project-thumb">
+                        <svg viewBox="0 0 160 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="160" height="90" fill="currentColor" style="color: var(--color-bg-alt);" />
+                            <!-- Abstract inverted index -->
+                            <rect x="20" y="20" width="40" height="6" rx="2" fill="currentColor" style="color: var(--color-text-muted);" />
+                            <rect x="70" y="20" width="60" height="6" rx="2" fill="currentColor" style="color: var(--color-text-muted);" />
+                            <rect x="20" y="35" width="50" height="6" rx="2" fill="currentColor" style="color: var(--color-accent);" />
+                            <rect x="80" y="35" width="30" height="6" rx="2" fill="currentColor" style="color: var(--color-border);" />
+                            <rect x="20" y="50" width="70" height="6" rx="2" fill="currentColor" style="color: var(--color-text-muted);" />
+                            <rect x="100" y="50" width="40" height="6" rx="2" fill="currentColor" style="color: var(--color-accent);" />
+                            <rect x="20" y="65" width="30" height="6" rx="2" fill="currentColor" style="color: var(--color-text-muted);" />
+                            <rect x="60" y="65" width="80" height="6" rx="2" fill="currentColor" style="color: var(--color-border);" />
+                        </svg>
+                    </div>
+                    <h3>NexTrace</h3>
+                    <p>Real Time Log Analytics & Search Platform with a custom inverted-index search engine.</p>
                     <ul class="tech-tags">
-                        <li>[Tech 1]</li>
-                        <li>[Tech 2]</li>
-                        <li>[Tech 3]</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>SQL</li>
                     </ul>
                     <div class="project-links">
-                        <a href="#">[View Code]</a>
-                        <a href="#">[Live Demo]</a>
+                        <a href="https://github.com/AnushkaKataria26/NexTrace" target="_blank" rel="noopener noreferrer">View Code</a>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-thumb"></div>
-                    <h3>[Project Title 2]</h3>
-                    <p>[One-line project description 2]</p>
+                    <div class="project-thumb">
+                        <svg viewBox="0 0 160 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="160" height="90" fill="currentColor" style="color: var(--color-bg-alt);" />
+                            <!-- Abstract node-and-edge graph -->
+                            <path d="M40 45 L80 25 L120 45 L80 65 Z" stroke="currentColor" style="color: var(--color-border);" stroke-width="2" fill="none" />
+                            <path d="M40 45 L80 65" stroke="currentColor" style="color: var(--color-accent);" stroke-width="2" fill="none" />
+                            <circle cx="40" cy="45" r="8" fill="currentColor" style="color: var(--color-text-muted);" />
+                            <circle cx="80" cy="25" r="8" fill="currentColor" style="color: var(--color-text-muted);" />
+                            <circle cx="120" cy="45" r="8" fill="currentColor" style="color: var(--color-text-muted);" />
+                            <circle cx="80" cy="65" r="8" fill="currentColor" style="color: var(--color-accent);" />
+                        </svg>
+                    </div>
+                    <h3>AsyncFlow</h3>
+                    <p>Distributed Task Queue & Worker Processing Platform with lease-based dequeue.</p>
                     <ul class="tech-tags">
-                        <li>[Tech 1]</li>
-                        <li>[Tech 2]</li>
-                        <li>[Tech 3]</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>PostgreSQL</li>
                     </ul>
                     <div class="project-links">
-                        <a href="#">[View Code]</a>
-                        <a href="#">[Live Demo]</a>
+                        <a href="https://github.com/AnushkaKataria26/AsyncFlow" target="_blank" rel="noopener noreferrer">View Code</a>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-thumb"></div>
-                    <h3>[Project Title 3]</h3>
-                    <p>[One-line project description 3]</p>
-                    <ul class="tech-tags">
-                        <li>[Tech 1]</li>
-                        <li>[Tech 2]</li>
-                        <li>[Tech 3]</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="#">[View Code]</a>
-                        <a href="#">[Live Demo]</a>
+                    <div class="project-thumb">
+                        <svg viewBox="0 0 160 90" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="160" height="90" fill="currentColor" style="color: var(--color-bg-alt);" />
+                            <!-- Abstract document/verification -->
+                            <rect x="55" y="15" width="50" height="60" rx="4" fill="none" stroke="currentColor" style="color: var(--color-border);" stroke-width="4" />
+                            <rect x="65" y="25" width="30" height="4" rx="2" fill="currentColor" style="color: var(--color-border);" />
+                            <rect x="65" y="35" width="30" height="4" rx="2" fill="currentColor" style="color: var(--color-border);" />
+                            <rect x="65" y="45" width="30" height="4" rx="2" fill="currentColor" style="color: var(--color-border);" />
+                            <path d="M45 55 L70 70 L115 40" stroke="currentColor" style="color: var(--color-accent);" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                        </svg>
                     </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-thumb"></div>
-                    <h3>[Project Title 4]</h3>
-                    <p>[One-line project description 4]</p>
+                    <h3>FactRadar</h3>
+                    <p>Fake news classifier evaluating class-imbalance robustness and benchmarking DistilBERT.</p>
                     <ul class="tech-tags">
-                        <li>[Tech 1]</li>
-                        <li>[Tech 2]</li>
-                        <li>[Tech 3]</li>
+                        <li>Machine Learning</li>
+                        <li>NLP</li>
+                        <li>Transformers</li>
                     </ul>
                     <div class="project-links">
-                        <a href="#">[View Code]</a>
-                        <a href="#">[Live Demo]</a>
+                        <a href="https://github.com/AnushkaKataria26/FactRadar" target="_blank" rel="noopener noreferrer">View Code</a>
                     </div>
                 </article>
 
@@ -148,21 +160,40 @@
             <div class="timeline">
                 
                 <div class="timeline-entry">
-                    <h3>[Degree Title]</h3>
-                    <p class="timeline-meta">[Organization] · [Start Date] – [End Date]</p>
-                    <p>[One to two sentence description]</p>
+                    <h3>Machine Learning Intern</h3>
+                    <p class="timeline-meta">IPCA Laboratories · Jun 2026 – Jul 2026</p>
+                    <p>To improve the triage of adverse drug reactions (ADRs), I developed an automated extraction pipeline utilizing Python and spaCy to identify relevant clinical entities from unstructured text. By integrating a custom pharmaceutical vocabulary and implementing targeted negation detection, the system successfully minimized false positives. This structured data then powered a Logistic Regression model (scikit-learn), which ultimately achieved precision and recall metrics surpassing our initial baseline.</p>
                 </div>
 
                 <div class="timeline-entry">
-                    <h3>[Role Title]</h3>
-                    <p class="timeline-meta">[Organization] · [Start Date] – [End Date]</p>
-                    <p>[One to two sentence description]</p>
+                    <h3>Machine Learning Intern | FactRadar</h3>
+                    <p class="timeline-meta">IBM PBEL Virtual Internship · Jun 2025 – Jul 2025</p>
+                    <p>Tasked with identifying misinformation, I engineered a classification system that prioritized robustness against severe class imbalances. I established a foundation using TF-IDF coupled with Logistic Regression and SVM models, rigorously evaluating their performance through F1, ROC-AUC, and PR-AUC scores. To determine the most effective approach for production, I subsequently fine-tuned a DistilBERT transformer, carefully comparing its accuracy gains against the latency overhead introduced over the classical baseline.</p>
                 </div>
 
                 <div class="timeline-entry">
-                    <h3>[Role Title]</h3>
-                    <p class="timeline-meta">[Organization] · [Start Date] – [End Date]</p>
-                    <p>[One to two sentence description]</p>
+                    <h3>Bachelor of Technology - Computer Science and Engineering</h3>
+                    <p class="timeline-meta">Mody University of Science and Technology · Aug 2023 – Present</p>
+                    <p>CGPA: 7.67. Focused on Data Structures, Algorithms, and Core CS principles.</p>
+                </div>
+
+                <div class="timeline-entry">
+                    <h3>Intermediate (XII)</h3>
+                    <p class="timeline-meta">Pragati Convent H.S. School · Jul 2021 – Apr 2022</p>
+                    <p>MP Board; Percentage: 88.2%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="timeline">
+                
+                <div class="timeline-entry">
+                    <h3>Top 100 Nationwide - AMD Slingshot Hackathon 2026</h3>
+                    <p class="timeline-meta">TruthLens</p>
+                    <p>Ranked in the top 100 teams nationwide and top 10 in the Jaipur region, out of 40,000+ participants across India, for TruthLens — a multimodal deepfake detection platform presented at the Regional Demo Day.</p>
                 </div>
 
             </div>
@@ -170,23 +201,26 @@
 
         <section id="resume">
             <h2>Resume</h2>
-            <div class="resume-embed">[Resume PDF will be embedded here]</div>
-            <!-- Replace href with actual resume file path in Phase 5. Consider fallback text if PDF fails to load. -->
-            <a href="#" class="btn">[Download Resume PDF]</a>
+            <div class="resume-embed">
+                <object data="assets/resume.pdf" type="application/pdf" style="width: 100%; height: 600px;" title="Resume">
+                    <p>Preview unavailable — use the download link below.</p>
+                </object>
+            </div>
+            <a href="assets/resume.pdf" class="btn" download>Download Resume PDF</a>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p><a href="mailto:[your.email@example.com]">[your.email@example.com]</a></p>
+            <p><a href="mailto:anushkakataria26@gmail.com">anushkakataria26@gmail.com</a></p>
             <div class="social-links">
-                <a href="#">[GitHub]</a>
-                <a href="#">[LinkedIn]</a>
+                <a href="https://github.com/AnushkaKataria26" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/anushkakataria" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© [Year] [Your Name]. All rights reserved.</p>
+        <p>© 2026 Anushka Kataria. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -91,11 +91,17 @@ main > section {
 }
 
 /* Section Background Rhythm */
-#hero, #skills, #experience, #contact {
+#hero, #skills, #experience, #resume {
     background-color: var(--color-bg);
 }
 
-#about, #projects, #resume {
+#about {
+    background-color: var(--color-bg-alt);
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+#projects, #achievements, #contact {
     background-color: var(--color-bg-alt);
 }
 
@@ -237,7 +243,7 @@ nav button[aria-controls="nav-links"] {
     grid-area: photo; 
     justify-self: center; 
     align-self: center; 
-    border-radius: 50% !important;
+    border-radius: 12px !important;
     border: 1px solid var(--color-border) !important;
     background-color: var(--color-bg-alt) !important;
     object-fit: cover;
